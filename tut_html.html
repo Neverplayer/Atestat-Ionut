@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+span {
+	background-color: #a6a6a6;
+	display: block;
+	padding:25%;
+}
+span:hover {
+    background-color: #737373;
+	display: block;
+    color: white
+}
+h1#menu {
+	text-align: center;
+	display: block;
+}
+a {
+	text-decoration:none;
+	color: white;
+}
+.cuplink {
+	color:black;
+}
+nav {
+	float: left;
+	max-width:20%;
+}
+.codebox {
+	border:1px solid black;
+	background-color:#EEEFFF
+	white-space: pre-line;
+	padding:10px;
+	font-size:0.9em;
+	display:inline-block;
+}
+#cup_cont {
+	background: #f9f9f9 none repeat scroll 0 0;
+	border: 1px solid #aaa;
+	display:table;
+	font-size:90%;
+	margin-bottom: 1em;
+	padding: 20px;
+	width: auto;
+}
+</style>
+<title>Hai sa programam!</title>
+</head>
+<body background="back.jpg">
+<nav>
+<h1 id="menu">
+	<span><a href="home.html">Home</a></span>
+	<span><a href="tut_html.html">Tutorial HTML</a></span>
+	<span><a href="tut_cmd.html">Tutorial CMD</a></span>
+	<span><a href="tut_algol.html">Tutorial algoritmica</a></span>
+	<span><a href="tut_cpp.html">Tutorial C++</a></span>
+</nav>
+<center><h1>Tutorial HTML</h1></center>
+<div id="cup_cont">
+<p>Cuprins</p>
+<ul>
+	<li><a class="cuplink" href="#C1">1.Introducere</a></li>
+	<li><a class="cuplink" href="#C2">2.Taguri</a></li>
+	<li><a class="cuplink" href="#Primul link">3.Atribute</a></li>
+	<li><a class="cuplink" href="#Primul link">4.Exemple</a></li>
+</ul>
+<h3 id="C1">Introducere</h3>
+<p>HyperText Markup Language (HTML) este un limbaj de marcare utilizat
+ pentru crearea paginilor web ce pot fi afișate într-un browser (sau navigator). 
+ Scopul HTML este mai degrabă prezentarea informațiilor – paragrafe, fonturi, tabele ș.a.m.d. – 
+ decât descrierea semanticii documentului. Specificațiile HTML sunt dictate de World Wide Web Consortium (W3C).
+ HTML este o formă de marcare orientată către prezentarea documentelor text pe o singura pagină, utilizând un 
+ software de redare specializat, numit agent utilizator HTML, cel mai bun exemplu de astfel de software fiind 
+ browserul web. HTML furnizează mijloacele prin care conținutul unui document poate fi adnotat cu diverse tipuri 
+ de metadate și indicații de redare. Indicațiile de redare pot varia de la decorațiuni minore ale textului, cum ar 
+ fi specificarea faptului că un anumit cuvânt trebuie subliniat sau că o imagine trebuie introdusă, până la scripturi 
+ sofisticate, hărți de imagini și formulare. Metadatele pot include informații despre titlul și autorul documentului, 
+ informații structurale despre cum este împărțit documentul în diferite segmente, paragrafe, liste, titluri etc. 
+ și informații cruciale care permit ca documentul să poată fi legat de alte documente pentru a forma astfel 
+ hiperlink-uri (sau web-ul). HTML este un format text proiectat pentru a putea fi citit și editat
+ de oameni utilizând un editor de text simplu. Totuși scrierea și modificarea paginilor în acest 
+ fel solicită cunoștințe solide de HTML și este consumatoare de timp. Editoarele grafice 
+ (de tip WYSIWYG) cum ar fi Macromedia Dreamweaver, Adobe GoLive sau Microsoft FrontPage permit
+ ca paginile web sa fie tratate asemănător cu documetele Word, dar cu observația că aceste programe
+ generează un cod HTML care este de multe ori de proastă calitate.</p>
+ <h3 id="C2">Taguri</h3>
+ <p>Paginile HTML sunt formate din etichete sau tag-uri și au extensia „.html” sau „.htm”. În marea lor 
+ majoritate aceste etichete sunt pereche, una de deschidere <eticheta> și alta de închidere </eticheta>, 
+ mai există și cazuri în care nu se închid, atunci se folosește <eticheta />. Navigatorul web interpretează 
+ aceste etichete afișând rezultatul pe ecran. HTML-ul este un limbaj care nu face deosebire între litere majuscule și minuscule.
+Pagina principala a unui domeniu este fisierul „index.html” respectiv „index.htm”. Această pagină este 
+setată a fi afișată automat la vizitarea unui domeniu.
+De exemplu la vizitarea domeniului www.nume.ro este afișată pagina www.nume.ro/index.html.
+Unele etichete permit utilizarea de atribute care pot avea anumite valori.</p>
+<p>Taguri de baza:</p>
+<ul>
+	<li>html-Tagul cu care se incepe si se incheie o pagina web. El anunta browserul ca incepe pagina.</li>
+	<li>body-Tagul care mentioneaza ca se deschide body-ul(partea vizibila) a paginni web. In body se pot introduce toate elementele vizuale care
+		vor vi vazute de user, exemplu:text,imagini,videoclipuri,sunete,samd.</li>
+	<li>head-Contine datele paginii nevazute(metadata), cum ar fi limba,stiluri,titlul si altele.</li>
+	<li>h1,2,3,4,5,6-Titluri(headings), folosite de la 1(cel mai mare) la 6(cel mai mic) pentru a desemna un titlu/text important.</li>
+<	li>p-Paragraful, se foloseste pentru blocuri de text care reprezinta "umplutura" siteului.</li>
+</ul>
+<h3 id="C3">Atribute</h3>
+<p>
+Am văzut câteva etichete HTML și utilizarea acestora ca etichetele de titlu h1, h2, eticheta paragraf p 
+și alte etichete. Le-am folosit până acum în cea mai simplă formă, dar majoritatea etichetelor HTML pot 
+avea și atribute, care sunt biți suplimentari de informații.
+Un atribut este utilizat pentru a defini caracteristicile unui element HTML și este plasat în interiorul 
+etichetei de deschidere a elementului. Toate atributele sunt alcătuite din două părți - un nume și o valoare.
+<ul>
+	<li>Numele este proprietatea pe care doriți să o setați. De exemplu, elementul p din paragraf poartă 
+		un atribut al cărui nume este aliniat(align), pe care îl puteți utiliza pentru a indica alinierea paragrafului pe pagină.</li>
+	<li>
+	<li>Valoarea este ceea ce doriți să setați valoarea proprietății și să introduceți întotdeauna cotații. Exemplul de mai jos arată trei 
+	valori posibile ale atributului de aliniere: stânga, centrul și dreapta.</li>
+</ul>
+</div>
+</body>
+</html>
